@@ -1,0 +1,25 @@
+--Creating a Clothing Store Database
+
+CREATE TABLE mars_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, aisle INTEGER, quantity INTEGER);
+
+INSERT INTO mars_store VALUES (1, "shirts", 5.46, 4, 32);
+INSERT INTO mars_store VALUES (2, "pants", 8,92, 5, 19);
+INSERT INTO mars_store VALUES (3, "shoes", 11.05, 6, 20);
+INSERT INTO mars_store VALUES (4, "socks", 4.00, 6, 35);
+INSERT INTO mars_store VALUES (5, "shorts", 7.13, 5, 29);
+INSERT INTO mars_store VALUES (6, "underwear", 6.32, 1, 40);
+INSERT INTO mars_store VALUES (7, "bras", 9.99, 1, 17);
+INSERT INTO mars_store VAlUES (8, "hats", 6.45, 2, 35);
+INSERT INTO mars_store VALUES (9, "scarfs", 3.05, 2, 10);
+INSERT INTO mars_store VALUES (10, "gloves", 4.50, 2, 18);
+INSERT INTO mars_store VALUES (11, "pajamas", 12.37, 2, 30);
+INSERT INTO mars_store VALUES (12, "skirts", 9.98, 5, 27);
+INSERT INTO mars_store VALUES (13, "leggings", 7.67, 5, 20);
+INSERT INTO mars_store VALUES (14, "crop tops", 8.43, 4, 40);
+INSERT INTO mars_store VALUES (15, "dresses", 11.23, 3, 24);
+
+--Display the database ordered by price.
+SELECT * FROM mars_store ORDER BY price asc;
+
+--What is the total inventory of the clothing store?
+SELECT SUM(quantity) FROM mars_store;
